@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: java-quarkus-167656665
+  namespace: skhileri-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:ebd5e28ebd59123a8aa2743219f574c7bc4dd29166d54107b69f1d791244d445
+        name: my-java-quarkus
+        resources: {}
+status: {}
